@@ -20,12 +20,12 @@ trait ChannelTrait
      */
     private $facebookPageId = '';
 
-    public function setEnableFacebookMessenger(bool $enableFacebookMessenger): void
+    public function setEnableFacebookMessenger(?bool $enableFacebookMessenger): void
     {
         $this->enableFacebookMessenger = $enableFacebookMessenger;
     }
 
-    public function isEnableFacebookMessenger(): bool
+    public function isEnableFacebookMessenger(): ?bool
     {
         return $this->enableFacebookMessenger;
     }
@@ -33,7 +33,7 @@ trait ChannelTrait
     /**
      * @return string
      */
-    public function getFacebookPageId(): string
+    public function getFacebookPageId(): ?string
     {
         return $this->facebookPageId;
     }
@@ -41,7 +41,7 @@ trait ChannelTrait
     /**
      * @param string $facebookPageId
      */
-    public function setFacebookPageId(string $facebookPageId): void
+    public function setFacebookPageId(?string $facebookPageId): void
     {
         $this->facebookPageId = $facebookPageId;
     }

@@ -19,9 +19,11 @@ class ChannelTypeExtension extends AbstractTypeExtension
         $builder
           ->add('enableFacebookMessenger', CheckboxType::class, [
               'label' => 'fitra_tech_sylius_facebook_messenger_plugin.ui.enable_facebook_messenger',
+              'required' => false,
           ])
           ->add('facebookPageId', TextType::class, [
               'label' => 'fitra_tech_sylius_facebook_messenger_plugin.ui.facebook_page_id',
+              'required' => false,
           ]);
     }
 
