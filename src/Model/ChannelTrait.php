@@ -9,14 +9,14 @@ trait ChannelTrait
     /**
      * @var bool
      *
-     * @ORM\Column(type="boolean", name="enable_facebook_messenger")
+     * @ORM\Column(type="boolean", name="enable_facebook_messenger", nullabe=true)
      */
     private $enableFacebookMessenger = false;
 
     /**
      * @var string
      *
-     * @ORM\Column(type="string", name="facebook_page_id")
+     * @ORM\Column(type="string", name="facebook_page_id", nullabe=true)
      */
     private $facebookPageId = '';
 
