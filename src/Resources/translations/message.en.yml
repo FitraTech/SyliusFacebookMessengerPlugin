@@ -1,0 +1,5 @@
+fitra_tech_sylius_facebook_messenger_plugin:
+    ui:
+        enable_facebook_messenger: Enable Facebook Messenger Chat Box
+        facebook_page_id: Facebook Page Id
+        facebook_messenger: Facebook Messenger

@@ -1,0 +1,5 @@
+fitra_tech_sylius_facebook_messenger_plugin:
+    ui:
+        enable_facebook_messenger: "فعل محادثة فيسبوك مسنجر"
+        facebook_page_id: "رقم صفحة الفيسبوك"
+        facebook_messenger: "فيسبوك ميسنجر"

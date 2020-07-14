@@ -1,0 +1,45 @@
+services:
+
+    # Default configuration for services in *this* file
+    _defaults:
+        # Automatically injects dependencies in your services
+        autowire: true
+
+        # Automatically registers your services as commands, event subscribers, etc.
+        autoconfigure: true
+
+        # Allows optimizing the container by removing unused services; this also means
+        # fetching services directly from the container via $container->get() won't work
+        public: false
+
+    # Makes classes in src/ available to be used as services;
+    # this creates a service per class whose id is the fully-qualified class name
+    FitraTech\SyliusFacebookMessengerPlugin\:
+        resource: '../../*'
+        exclude: '../../{Entity,Migrations,Tests,Kernel.php}'
+
+    # Forms extensions
+    FitraTech\SyliusFacebookMessengerPlugin\Form\Extension\:
+        resource: '../../Form/Extension'
+        tags:
+            - { name: form.type_extension }
+
+    #fitra_tech_sylius_facebook_messenger_plugin.form.extension.type.channel:
+    #    class: FitraTech\SyliusFacebookMessengerPlugin\Form\Extension\ChannelTypeExtension
+    #    tags:
+    #        - { name: form.type_extension, extended_type: Sylius\Bundle\ChannelBundle\Form\Type\ChannelType }
+
+
+    #fitra_tech_sylius_facebook_messenger_plugin.block_event_listener.layout.after_body:
+    #    class: Sylius\Bundle\UiBundle\Block\BlockEventListener
+    #    arguments:
+    #        - '@@FitraTechSyliusFacebookMessengerPlugin/embed.html.twig'
+    #    tags:
+    #        - { name: kernel.event_listener, event: sylius.shop.layout.after_body, method: onBlockEvent }
+
+    my.service.name.rendering.block:
+        class: Sylius\Bundle\UiBundle\Block\BlockEventListener
+        arguments:
+            - '@@FitraTechSyliusFacebookMessengerPlugin/embed.html.twig'
+        tags:
+            - { name: kernel.event_listener, event: sonata.block.event.sylius.shop.layout.after_body, method: onBlockEvent }
