@@ -24,19 +24,6 @@ services:
         tags:
             - { name: form.type_extension }
 
-    #fitra_tech_sylius_facebook_messenger_plugin.form.extension.type.channel:
-    #    class: FitraTech\SyliusFacebookMessengerPlugin\Form\Extension\ChannelTypeExtension
-    #    tags:
-    #        - { name: form.type_extension, extended_type: Sylius\Bundle\ChannelBundle\Form\Type\ChannelType }
-
-
-    #fitra_tech_sylius_facebook_messenger_plugin.block_event_listener.layout.after_body:
-    #    class: Sylius\Bundle\UiBundle\Block\BlockEventListener
-    #    arguments:
-    #        - '@@FitraTechSyliusFacebookMessengerPlugin/embed.html.twig'
-    #    tags:
-    #        - { name: kernel.event_listener, event: sylius.shop.layout.after_body, method: onBlockEvent }
-
     my.service.name.rendering.block:
         class: Sylius\Bundle\UiBundle\Block\BlockEventListener
         arguments:

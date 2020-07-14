@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\FitraTech\SyliusFacebookMessengerPlugin\Entity\Channel;
+namespace Tests\FitraTech\SyliusFacebookMessengerPlugin\App\Entity\Channel;
 
 use Doctrine\ORM\Mapping as ORM;
 use FitraTech\SyliusFacebookMessengerPlugin\Model\ChannelInterface as FacebookMessengerChannelInterface;
