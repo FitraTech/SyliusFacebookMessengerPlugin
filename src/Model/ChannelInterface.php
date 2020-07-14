@@ -7,11 +7,11 @@ namespace FitraTech\SyliusFacebookMessengerPlugin\Model;
 
 interface ChannelInterface
 {
-    public function setEnableFacebookMessenger(bool $availableOnDemand): void;
+    public function setEnableFacebookMessenger(?bool $availableOnDemand): void;
 
-    public function isEnableFacebookMessenger(): bool;
+    public function isEnableFacebookMessenger(): ?bool;
 
-    public function setFacebookPageId(string $facebookPageId): void;
+    public function setFacebookPageId(?string $facebookPageId): void;
 
-    public function getFacebookPageId(): string;
+    public function getFacebookPageId(): ?string;
 }
