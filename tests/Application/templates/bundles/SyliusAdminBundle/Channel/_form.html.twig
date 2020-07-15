@@ -80,11 +80,8 @@
             {{ form_row(form.skippingPaymentStepAllowed) }}
             {{ form_row(form.accountVerificationRequired) }}
         </div>
+
         <div class="ui hidden divider"></div>
-        <h4 class="ui top attached large header">{{ 'fitra_tech_sylius_facebook_messenger_plugin.ui.facebook_messenger'|trans }}</h4>
-        <div class="ui attached segment">
-            {{ form_row(form.enableFacebookMessenger) }}
-            {{ form_row(form.facebookPageId) }}
-        </div>
+        {% include '@FitraTechSyliusFacebookMessengerPlugin/Channel/form.html.twig' %}
     </div>
 </div>
