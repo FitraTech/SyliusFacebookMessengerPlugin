@@ -1,7 +1,7 @@
 {
-    "name": "fitratech/sylius-facebook-messenger",
+    "name": "fitratech/sylius-facebook-messenger-plugin",
     "type": "sylius-plugin",
-    "keywords": ["sylius", "sylius-plugin", "facebook messenger"],
+    "keywords": ["sylius", "sylius-plugin", "facebook messenger", "messenger", "chat", "chatbox"],
     "description": "A plugin to integrate facebook messenger chat box in Sylius.",
     "license": "MIT",
     "require": {
